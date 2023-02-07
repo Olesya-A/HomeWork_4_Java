@@ -13,11 +13,9 @@ first() - возвращает первый элемент из очереди, 
 public class Task_2 {
     public static void main(String[] args) {
         Queue<Integer> queue = new LinkedList<Integer>();
-        queue.add(1);
-        queue.add(2);
-        queue.add(3);
-        queue.add(4);
-        System.out.println(queue);
+        enqueue(queue);
+        enqueue(queue);
+        enqueue(queue);
         enqueue(queue);
         System.out.println(queue);
         dequeue(queue);
@@ -31,7 +29,6 @@ public class Task_2 {
         System.out.print("Enter a value: ");
         Integer input = iScanner.nextInt();
         listInput.add(input); // offer
-        iScanner.close();
         return listInput;
     }
 
