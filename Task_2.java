@@ -36,7 +36,7 @@ public class Task_2 {
     }
 
     static int dequeue(Queue<Integer> listInput) {
-        int item = listInput.poll(); // poll
+        int item = listInput.remove(); // poll
         System.out.println(item);
         return item;
     }
