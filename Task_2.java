@@ -36,13 +36,13 @@ public class Task_2 {
     }
 
     static int dequeue(Queue<Integer> listInput) {
-        int item = listInput.remove(); // poll
+        int item = listInput.poll(); //remove
         System.out.println(item);
         return item;
     }
 
     static int first(Queue<Integer> listInput) {
-        int item = listInput.element(); // peek
+        int item = listInput.peek(); // element
         System.out.println(item);
         return item;
     }
